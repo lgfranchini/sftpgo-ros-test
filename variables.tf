@@ -34,7 +34,7 @@ variable "sftp_users" {
     username    = string
     password    = string
     home_dir    = string
-    permissions = list(string)
+    permissions = map(string)
     status      = string
     filesystem  = map(any)
   }))
