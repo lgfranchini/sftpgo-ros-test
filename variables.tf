@@ -28,3 +28,14 @@ variable "client_secret" {
   type      = string
   sensitive = true
 }
+
+variable "sftp_users" {
+  type = map(object({
+    username    = string
+    password    = string
+    home_dir    = string
+    permissions = list(string)
+    status      = string
+    filesystem  = map(any)
+  }))
+}

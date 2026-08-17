@@ -1,18 +1,18 @@
 variable "username" {
-    type = string
+  type = string
 }
 variable "status" {
-    type = string
+  type = string
 }
 variable "permissions" {
-    type = list(string)
+  type = map(string)
 }
 variable "filesystem" {
-    type = map(any)
+  type = map(any)
 }
 variable "password" {
-    type = string
+  type = string
 }
 variable "home_dir" {
-    type = string
-    }
+  type = string
+}
