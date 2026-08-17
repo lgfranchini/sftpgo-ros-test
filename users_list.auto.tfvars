@@ -4,13 +4,21 @@ sftp_users = {
     username    = "luigi"
     password    = "turlututu"
     home_dir    = "/luigi"
-    permissions = ["list", "download", "upload"]
+    permissions = {
+      "/" = "*"
+      }
+    filesystem  = {provider = 0}
+    status      = "1"
   }
 
   sylvain = {
     username    = "sylvain"
     password    = "taratata"
     home_dir    = "/sylvain"
-    permissions = ["list", "download"]
+    permissions = {
+      "/" = "*"
+      }
+    filesystem  = {provider = 0}
+    status      = "1"
   }
 }
