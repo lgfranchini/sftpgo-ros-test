@@ -21,4 +21,15 @@ sftp_users = {
     filesystem  = {provider = 0}
     status      = "1"
   }
+
+  pascal = {
+    username    = "pascal"
+    password    = "tititi"
+    home_dir    = "/pascal"
+    permissions = {
+      "/" = "*"
+      }
+    filesystem  = {provider = 0}
+    status      = "1"
+  }
 }
