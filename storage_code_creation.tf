@@ -7,3 +7,4 @@ module "blob_storage_backup" {
   storage_account_name = "stsftpgobackup001"
   container_name       = "backup"
 }
+
