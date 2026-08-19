@@ -11,4 +11,6 @@ provider "azurerm" {
   tenant_id       = var.tenant_id
   client_id       = var.client_id
   client_secret   = var.client_secret
+#pour éviter que tofu tente d'enregistrer un provider AzureRM qui n'est pas encore enregistré dans le tenant, on désactive l'enregistrement automatique des providers
+  resource_provider_registrations = "none"
 }
