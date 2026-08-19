@@ -32,4 +32,15 @@ sftp_users = {
     filesystem  = {provider = 0}
     status      = "1"
   }
+
+  alain = {
+    username    = "alain"
+    password    = "tititi"
+    home_dir    = "/alain"
+    permissions = {
+      "/" = "*"
+      }
+    filesystem  = {provider = 0}
+    status      = "1"
+  }
 }
